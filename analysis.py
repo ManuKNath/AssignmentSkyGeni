@@ -30,7 +30,7 @@ renewed_client = subscription_csv[subscription_csv['renewed'] == True]
 
 merged_df = pd.merge(renewed_client, client_csv, on='client_id', how='left')
 
-merged_df.industry.value_counts().head(1)
+print(merged_df.industry.value_counts().head(1).idxmax())
 
 industry_dist = merged_df.groupby('industry').size()
 
