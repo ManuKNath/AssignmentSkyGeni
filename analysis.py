@@ -106,6 +106,8 @@ payment_analysis_df['year'] = payment_analysis_df['payment_date'].dt.year
 
 payment_year_median = payment_analysis_df.groupby(['year', 'payment_method'])['amount_paid'].median().reset_index()
 
+print(payment_year_median)
+
 
 # # Plotting
 plt.figure(figsize=(10, 6))
