@@ -25,7 +25,7 @@ This project analyzes organizational data to answer key business questions relat
 ### 1. Clone the Repository
 git clone https://github.com/ManuKNath/AssignmentSkyGeni.git
 
-cd finance-blockchain-analysis
+cd AssignmentSkyGeni
 
 ### 2. Install Dependencies
 pip install -r requirements.txt
