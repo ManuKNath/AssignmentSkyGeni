@@ -23,7 +23,8 @@ This project analyzes organizational data to answer key business questions relat
 ## Installation & Setup
 
 ### 1. Clone the Repository
-git clone https://github.com/your-username/finance-blockchain-analysis.git
+git clone https://github.com/ManuKNath/AssignmentSkyGeni.git
+
 cd finance-blockchain-analysis
 
 ### 2. Install Dependencies
