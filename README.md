@@ -32,4 +32,4 @@ pip install -r requirements.txt
 
 
 ### 3. Run the Analysis
-python data_analysis.py
+python -W ignore data_analysis.py

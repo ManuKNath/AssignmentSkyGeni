@@ -43,7 +43,16 @@ plt.xlabel('Industry')  # X-axis label
 plt.ylabel('Count')  # Y-axis label
 plt.xticks(rotation=0)  # Rotate x-axis labels for better readability
 plt.grid(axis='y')  # Add grid lines for better readability
-plt.show()  # Display the plot
+
+
+# Save the figure
+plt.savefig("results/plot1.png", dpi=300, bbox_inches="tight")
+
+# Display the plot
+# plt.show(block=True)
+
+# Displaying the plot location
+print('Plot save at results/plot1.png')
 
 
 
@@ -91,6 +100,8 @@ print('4. What is the median amount paid each year for all payment methods?')
 
 payment_analysis_df = payment_csv.copy()
 
+payment_analysis_df['payment_date'] = pd.to_datetime(payment_analysis_df.payment_date)
+
 payment_analysis_df['year'] = payment_analysis_df['payment_date'].dt.year
 
 payment_year_median = payment_analysis_df.groupby(['year', 'payment_method'])['amount_paid'].median().reset_index()
@@ -121,6 +132,10 @@ plt.xticks(x_positions + bar_width * (len(payment_methods) - 1) / 2, years)  # C
 plt.legend(title='Payment Method')
 plt.grid(axis='y')
 
+# Save the figure
+plt.savefig("results/plot2.png", dpi=300, bbox_inches="tight")
+
 # Show the plot
-plt.tight_layout()
-plt.show()
+# plt.show(block=True)
+
+print('Plot save at results/plot2.png')
