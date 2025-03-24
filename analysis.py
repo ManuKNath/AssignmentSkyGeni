@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 
 
 
-finance_csv = pd.read_csv('finanical_information.csv')
-client_csv = pd.read_csv('industry_client_details.csv')
-payment_csv = pd.read_csv('payment_information.csv')
-subscription_csv = pd.read_csv('subscription_information.csv')
+finance_csv = pd.read_csv('data/finanical_information.csv')
+client_csv = pd.read_csv('data/industry_client_details.csv')
+payment_csv = pd.read_csv('data/payment_information.csv')
+subscription_csv = pd.read_csv('data/subscription_information.csv')
 
 
 
